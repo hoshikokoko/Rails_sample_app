@@ -20,6 +20,7 @@ class ListsController < ApplicationController
   end
 
   def edit
+    @List = List.find(params[:id])
   end
   
   private
